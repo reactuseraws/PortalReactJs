@@ -1,4 +1,4 @@
-exports.fcIncluirUsuario = async (InputcpEmail, InputcpSenha )  =>  {
+export async function fcIncluirUsuario(InputcpEmail, InputcpSenha )  {
 
 
         const api = `https://api.marcelonardi.com/login`;
@@ -35,7 +35,7 @@ exports.fcIncluirUsuario = async (InputcpEmail, InputcpSenha )  =>  {
         console.log(dataUser);
         return dataUser;
         
-};
+}
 
 
 // async function getData() {
